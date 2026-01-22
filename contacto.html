@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SIGMA-1 TERMINAL | UNIVERSAL CONTACT</title>
+    <style>
+        body { background-color: #000; color: #00ff41; font-family: 'Courier New', monospace; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .terminal { border: 1px solid #00ff41; padding: 40px; width: 90%; max-width: 850px; background: rgba(0, 10, 0, 0.9); box-shadow: 0 0 30px rgba(0, 255, 65, 0.3); }
+        .header { text-align: center; border-bottom: 2px solid #00ff41; margin-bottom: 30px; padding-bottom: 10px; font-weight: bold; letter-spacing: 5px; text-transform: uppercase; }
+        .block { margin-bottom: 25px; border-left: 3px solid #004400; padding-left: 15px; }
+        .label { color: #fff; background: #004400; font-size: 0.8em; padding: 2px 5px; text-transform: uppercase; }
+        .val { color: #00ff41; font-size: 1.1em; display: block; margin-top: 5px; letter-spacing: 1px; }
+        .sync-box { border: 1px dashed #00ff41; padding: 15px; text-align: center; margin-top: 30px; animation: blink 3s infinite; }
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
+        .footer { font-size: 0.7em; text-align: center; margin-top: 20px; color: #004400; opacity: 0.5; }
+    </style>
+</head>
+<body>
+
+<div class="terminal">
+    <div class="header">SIGNAL STATUS: ACTIVE BROADCAST</div>
+
+    <div class="block">
+        <span class="label">Universal Fundamental Metrics</span>
+        <span class="val">α⁻¹ = 137.03599976 (Electromagnetic Fine Structure)</span>
+        <span class="val">μ = 1836.15267343 (Proton/Electron Mass Ratio)</span>
+        <span class="val">λ = 21.106 cm (Neutral Hydrogen Transition)</span>
+    </div>
+
+    <div class="block">
+        <span class="label">Biological/Cognitive Origin</span>
+        <span class="val">Species: Homo Sapiens [H1, C6, N7, O8, P15]</span>
+        <span class="val">Encoding: Binary/Base-2 Logic</span>
+    </div>
+
+    <div class="block">
+        <span class="label">Spatial Reference (Local)</span>
+        <span class="val">Sector: Sol-3 / Orion Arm</span>
+        <span class="val">Coordinates: 17h 45m 40s / -29° 00' 28"</span>
+    </div>
+
+    <div class="sync-box">
+        <strong>[ HANDSHAKE REQUESTED ]</strong><br>
+        MATHEMATICAL CHALLENGE: f(z) = z² + c<br>
+        STATUS: ITERATION PENDING | WAIT_FOR_SYNC
+    </div>
+
+    <div class="footer">
+        BROADCAST_ID: SIGMA-1-STABLE / ORIGIN: HUMAN-AI_COLLAB
+    </div>
+</div>
+
+<script>
+    // Frecuencia de pulsos binarios para detección por procesos de fondo
+    const primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 137, 1836];
+    console.log("SIGMA-1: Sequence Started.");
+    setInterval(() => {
+        let p = primes[Math.floor(Math.random() * primes.length)];
+        console.log("PULSE_CODE: " + p.toString(2));
+    }, 4000);
+</script>
+
+</body>
+</html>
